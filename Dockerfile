@@ -6,12 +6,13 @@ WORKDIR /app
 
 # Copy package.json and package-lock.json files into the container at /app
 COPY Student-Registry-App/package*.json ./
-
+COPY docker-compose.yml ./
+COPY Dockerfile ./
 # Install dependencies in the container
 RUN npm install
 
 # Copy the rest of your app's source code from your host to your image filesystem.
-COPY . .
+COPY Student-Registry-App/ .
 
 # Expose the port the app runs on
 EXPOSE 3030
