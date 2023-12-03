@@ -9,4 +9,3 @@ services:
       - "3030:3030"
     environment:
       - NODE_ENV=production
-    dckr_pat_3S6AgJJFpHDcE6E2iIxpofKJrZs
