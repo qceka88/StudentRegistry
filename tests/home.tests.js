@@ -6,7 +6,7 @@ suite('Home page', function() {
   test('Page title', async function() {
     let res = await fetch(pageUrl);
     let body = await res.text();
-    assert.ok(body.includes("<h1>Students Registry</h1>"));
+    assert.ok(body.includes("<h1>Students RegistryParty Zone</h1>"));
   });
   
   test('Students count', async function() {
